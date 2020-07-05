@@ -19,7 +19,8 @@
     "jest": "^26.0.1",
     "lint-staged": "^10.2.11",
     "ts-jest": "^26.1.0",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "@types/validator": "^13.1.0"
   },
   "scripts": {
     "test": "jest --passWithNoTests --silent --noStackTrace --runInBand",
@@ -28,5 +29,8 @@
     "test:integration": "yarn test --watch -c jest-integration-config.js",
     "test:staged": "yarn test --findRelatedTests",
     "test:ci": "yarn test --coverage"
+  },
+  "dependencies": {
+    "validator": "^13.1.1"
   }
 }
